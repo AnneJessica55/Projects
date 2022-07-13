@@ -1,0 +1,134 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Knewave&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;0,900;1,200;1,300;1,400;1,700&family=Patrick+Hand&family=Righteous&display=swap');
+
+
+:root{
+    --cor000:#F2D295;
+    --cor00:#100007;
+    --cor1:#4D4330;
+    --cor2:#D7A445;
+    --cor3:#dfa57e;
+    --cor4:#835A3F;
+    --cor5:#4F3626;
+    --font_brand: 'Knewave', cursive;
+    --font_slogan: 'Montserrat', cursive;
+    --font-menu: 'Patrick Hand', cursive;
+    --font_text: 'Nunito', cursive;
+    --font_footer: 'Bebas Neue', Cursive;
+
+}
+*{
+    margin:0;
+    padding:0%;
+} 
+body{
+    background: #F2D295;
+}
+header{
+    display: flex;
+    background: linear-gradient(to bottom, var(--cor000), var(--cor4), var(--cor5));
+    min-height: 100px;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+header .brand{
+    float: left;
+    padding: 0 30px;
+}
+header > .brand > h1 {
+    font-family: var(--font_brand);
+    color: var(--cor00);
+    width:400px;
+}
+header > .brand > p {
+    font-family: var(--font_slogan);
+}
+header > .logo {
+    flex: right;
+    align-content: flex-end;
+    max-height: 100%;
+    height:100px;
+    padding: 0 50px;
+    
+}
+.logo  img{
+    height:100%;
+}
+nav{
+    display: flex;
+    background-color: var(--cor5);
+    padding: 0 20px;
+    justify-content: center;
+}
+nav > a {
+    font-family: var(--font-menu);
+    color: var(--cor000);
+    width:200px;
+    font-weight: bold;
+    text-shadow: 2px 2px #504531;
+    text-decoration: none;
+    margin-bottom: 0px;
+    justify-content: space-between;
+    text-align: center;
+}
+nav > a:hover{
+    background-color: var(--cor000);
+    color: var(--cor5);
+    text-shadow: 1px 1px #16130e98;
+    transition-duration: 0.5s;  
+}
+main{
+    display: flex;
+    margin: auto;
+    min-width: 300px;
+    max-width: 1080px;
+    min-height:50vh;
+    padding:20px;
+    background-color: var(--cor3);
+    box-shadow: 2px 2px 8px #694e3b80;
+    margin-bottom:2vh;
+    border-radius: 0 0 5px 5px;
+    flex-direction: column;
+}
+main > .ad {
+    max-width:55%;
+    max-height: 20%;
+    display:flex;
+    margin: auto;
+}
+main > .ad > img{
+    max-width: 100%;
+    max-height: auto;
+}
+main > .articles {
+    display: flex;
+    margin: 40px;
+}
+footer{
+    display:flex;
+    background-color: #4f3626bb;
+    min-height:15vh;
+    margin: auto;
+    flex-direction: column;
+}
+footer > .options {
+    margin: 0;
+    display: flex; 
+    justify-content: center;
+}
+footer > .options > a{
+    width:300px;
+    font-family: var(--font_footer);
+    color:var(--cor000);
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: none;
+    
+}
+footer > address{
+    font-family: var(--font_brand);
+    color:var(--cor00);
+    text-align: center;
+    padding-top: 20px;
+}
+
